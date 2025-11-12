@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" data-mode="chaos">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>///DISTORTION_STUDIO</title>
+    <meta name="description" content="Anti-pattern creative systems. Glitch aesthetics. Conversion through disruption." />
+
+    <!-- Brutalist type stack -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Barlow:wght@100;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-state="init">
+    <!-- Floating corner navigation cubes -->
+    <nav class="nav-cubes" aria-label="Navigation">
+      <div class="cube top-left" data-nav="home">
+        <div class="face">HOME</div>
+      </div>
+      <div class="cube top-right" data-nav="work">
+        <div class="face">WORK</div>
+      </div>
+      <div class="cube bottom-left" data-nav="process">
+        <div class="face">PROCESS</div>
+      </div>
+      <div class="cube bottom-right" data-nav="contact">
+        <div class="face">CONTACT</div>
+      </div>
+    </nav>
+
+    <!-- Vertical side ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-content">
+        <span>DISRUPTION</span><span>•</span><span>CONVERSION</span><span>•</span><span>SYSTEMS</span><span>•</span>
+        <span>DISRUPTION</span><span>•</span><span>CONVERSION</span><span>•</span><span>SYSTEMS</span><span>•</span>
+      </div>
+    </div>
+
+    <!-- Hero: Glitch terminal interface -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="glitch-container">
+        <h1 class="glitch-text" data-text="DISTORTION_STUDIO">
+          <span aria-hidden="true">DISTORTION_STUDIO</span>
+          DISTORTION_STUDIO
+          <span aria-hidden="true">DISTORTION_STUDIO</span>
+        </h1>
+      </div>
+      
+      <div class="terminal" role="region">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="title">system://creative</span>
+        </div>
+        <div class="terminal-body">
+          <div class="line">$ analyzing_business_needs...</div>
+          <div class="line typing">$ we_create <span class="highlight">anti-patterns</span> that <span class="highlight">convert</span></div>
+          <div class="line">$ methods: [glitch, brutalism, kinetic, generative]</div>
+          <div class="line">$ status: <span class="blink">ACCEPTING_PROJECTS</span></div>
+        </div>
+        <button class="cta-glitch" data-action="contact">
+          <span>INITIATE_CONTACT</span>
+          <span class="glitch-layer" aria-hidden="true">INITIATE_CONTACT</span>
+        </button>
+      </div>
+
+      <canvas class="matrix-rain" id="matrixRain" aria-hidden="true"></canvas>
+    </section>
+
+    <!-- Work: Chaotic scattered cards -->
+    <section id="work" class="work-chaos" aria-label="Selected Work">
+      <h2 class="section-title rotated">SELECTED<br/>CHAOS</h2>
+      
+      <div class="cards-scattered" data-work>
+        <article class="work-card" style="--x: 10%; --y: 15%; --rot: -5deg" data-project="ecom">
+          <div class="card-inner">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-overlay">
+              <span class="tag">E-COMMERCE</span>
+              <span class="metric">+38% CONVERSION</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="work-card" style="--x: 65%; --y: 10%; --rot: 8deg" data-project="fintech">
+          <div class="card-inner">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-overlay">
+              <span class="tag">FINTECH</span>
+              <span class="metric">KINETIC CHARTS</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="work-card" style="--x: 35%; --y: 40%; --rot: -12deg" data-project="culture">
+          <div class="card-inner">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=600&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-overlay">
+              <span class="tag">CULTURAL</span>
+              <span class="metric">EDITORIAL MOTION</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="work-card" style="--x: 70%; --y: 55%; --rot: 3deg" data-project="saas">
+          <div class="card-inner">
+            <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=600&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-overlay">
+              <span class="tag">SAAS</span>
+              <span class="metric">FRICTIONLESS</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="work-card" style="--x: 15%; --y: 65%; --rot: -7deg" data-project="experimental">
+          <div class="card-inner">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=600&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-overlay">
+              <span class="tag">EXPERIMENTAL</span>
+              <span class="metric">WEBGL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="floating-text" aria-hidden="true">
+        <span style="--delay: 0s; --x: 80%; --y: 30%">ANTI</span>
+        <span style="--delay: 0.5s; --x: 20%; --y: 50%">PATTERN</span>
+        <span style="--delay: 1s; --x: 50%; --y: 70%">DESIGN</span>
+      </div>
+    </section>
+
+    <!-- Process: Disrupted timeline -->
+    <section id="process" class="process-disrupted" aria-label="Our Process">
+      <div class="process-grid">
+        <div class="phase phase-1" data-phase="1">
+          <span class="number">01</span>
+          <h3>DISRUPT</h3>
+          <p>Break conventions. Question patterns. Find the void.</p>
+        </div>
+        <div class="phase phase-2" data-phase="2">
+          <span class="number">02</span>
+          <h3>DISTORT</h3>
+          <p>Bend reality. Create tension. Make them look.</p>
+        </div>
+        <div class="phase phase-3" data-phase="3">
+          <span class="number">03</span>
+          <h3>DEVELOP</h3>
+          <p>Build systems. Optimize chaos. Measure impact.</p>
+        </div>
+        <div class="phase phase-4" data-phase="4">
+          <span class="number">04</span>
+          <h3>DELIVER</h3>
+          <p>Ship fast. Break things. Iterate forever.</p>
+        </div>
+      </div>
+      
+      <div class="process-lines" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path class="connection" d="M 10,10 Q 50,90 90,10" />
+          <path class="connection" d="M 90,90 Q 50,10 10,90" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Contact: Brutalist form -->
+    <section id="contact" class="contact-brutal" aria-label="Contact">
+      <div class="contact-split">
+        <div class="contact-left">
+          <h2 class="huge-text">LET'S<br/>BREAK<br/>THINGS</h2>
+          <div class="contact-info">
+            <div class="info-block">
+              <span class="label">RESPONSE_TIME</span>
+              <span class="value">< 24hrs</span>
+            </div>
+            <div class="info-block">
+              <span class="label">PROJECT_MINIMUM</span>
+              <span class="value">$0 (consultation)</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form-brutal" onsubmit="return false">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="YOUR_NAME" required />
+            <span class="input-border"></span>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="YOUR_EMAIL" required />
+            <span class="input-border"></span>
+          </div>
+          <div class="form-row">
+            <textarea name="message" rows="4" placeholder="DESCRIBE_YOUR_CHAOS" required></textarea>
+            <span class="input-border"></span>
+          </div>
+          <button class="submit-brutal" type="submit">
+            <span>SEND_TRANSMISSION</span>
+            <div class="submit-bg"></div>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="foot-minimal" role="contentinfo">
+      <div class="footer-text">
+        <span id="year"></span> — NO RIGHTS RESERVED — COPY EVERYTHING
+      </div>
+    </footer>
+
+    <!-- Popup detail modal -->
+    <div class="modal-overlay" data-modal-overlay hidden>
+      <div class="modal-glitch" data-modal>
+        <button class="modal-close" data-modal-close>×</button>
+        <div class="modal-content">
+          <h3 data-modal-title></h3>
+          <div class="modal-stats">
+            <span>STATUS: COMPLETE</span>
+            <span>IMPACT: SIGNIFICANT</span>
+          </div>
+          <p>Anti-pattern system deployed. Conversion metrics exceeded. Chaos controlled.</p>
+          <button class="cta-glitch" data-action="contact">
+            <span>START_PROJECT</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
